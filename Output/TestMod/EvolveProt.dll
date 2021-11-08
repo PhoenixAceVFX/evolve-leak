@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE dotfuscator SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscator_v2.4.dtd">
+<dotfuscator version="2.3">
+  <input>
+    <loadpaths />
+    <asmlist>
+      <inputassembly refid="7b3c9e76-3672-4ec1-971a-8dabdc8af6f1">
+        <file dir="C:\Users\Kyuzo\Desktop\Client\Evolve\Output\TestMod" name="Evolve.dll" />
+      </inputassembly>
+    </asmlist>
+  </input>
+  <output>
+    <file dir="${configdir}\Dotfuscated" />
+  </output>
+  <renaming scheme="upperalpha">
+    <option>enhancedOI</option>
+    <option>randomizeRenaming</option>
+    <option>xmlserialization</option>
+    <excludelist>
+      <assembly>
+        <file dir="C:\Users\Kyuzo\Desktop\Client\Evolve\Output\TestMod" name="Evolve.dll" />
+      </assembly>
+    </excludelist>
+    <mapping>
+      <mapoutput overwrite="false">
+        <file dir="${configdir}\Dotfuscated" name="Map.xml" />
+      </mapoutput>
+    </mapping>
+    <referencerulelist />
+  </renaming>
+  <controlflow level="high">
+    <excludelist>
+      <assembly>
+        <file dir="C:\Users\Kyuzo\Desktop\Client\Evolve\Output\TestMod" name="Evolve.dll" />
+      </assembly>
+    </excludelist>
+  </controlflow>
+  <stringencrypt>
+    <includelist>
+      <assembly>
+        <file dir="C:\Users\Kyuzo\Desktop\Client\Evolve\Output\TestMod" name="Evolve.dll" />
+      </assembly>
+    </includelist>
+  </stringencrypt>
+  <premark>
+    <option>disable</option>
+    <option>usepassphrase</option>
+    <assemblylist>
+      <assembly>
+        <file dir="C:\Users\Kyuzo\Desktop\Client\Evolve\Output\TestMod" name="Evolve.dll" />
+      </assembly>
+    </assemblylist>
+    <passphrase>Evolve Engine</passphrase>
+  </premark>
+  <sos mergeruntime="true">
+    <option>version:v4</option>
+    <option>dontsendtamper</option>
+  </sos>
+  <smartobfuscation>
+    <smartobfuscationreport verbosity="all" overwrite="false" />
+  </smartobfuscation>
+</dotfuscator>
